@@ -1,3 +1,5 @@
+![gplcalc logo](./logo.png)
+
 # gplcalc
 Uçbirim tabanlı, özgür yazılım ve hafif bir hesap makinesi.   
 Yapabileceği işlemler:
