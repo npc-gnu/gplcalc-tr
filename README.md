@@ -9,7 +9,8 @@ Yapabileceği işlemler:
 - Üssü alma
 - Hipotenüs hesaplama
 
-> **Note:** If you are looking for English version, (click here)[https://github.com/npc-gnu/gplcalc] .
+> **Note:** If you are looking for English version, [click here](https://github.com/npc-gnu/gplcalc)
+ .
 
 ## İndirme
 
