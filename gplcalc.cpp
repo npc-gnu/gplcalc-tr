@@ -15,7 +15,7 @@ int main(){
 				cin >> B;
 				switch (B) {
 			case 1: {
-			cout << "Toplayacağınız sayıları girin." << endl;
+			cout << "Toplayacağınız sayıları girin. '=' yazarak işlemi bitirin." << endl;
 
 				float toplam = 0;
 				string input;
@@ -46,7 +46,7 @@ int main(){
 				       float U;
 				       cin >> N;
 				       cin >> U;
-				       cout << N - U << endl;
+				       cout << "Sonuç: " << N - U << endl;
 			       }
 			       break;
 			case 3:{
@@ -55,7 +55,7 @@ int main(){
 				       float G;
 				       cin >> X;
 				       cin >> G;
-				       cout << X * G << endl;
+				       cout << "Sonuç: " << X * G << endl;
 			       }
 			       break;
 			case 4:{
@@ -73,7 +73,7 @@ int main(){
 								      cout << "Sıfıra bölünemez!" << endl;
 							      }
 							      else{
-							      cout << I / Q << endl;
+							      cout << "Sonuç: " << I / Q << endl;
 						      }
 						      }
 						      break;
@@ -87,7 +87,7 @@ int main(){
 								      cout << "Sıfıra bölünemez!" << endl;
 							      }
 							      else{
-							      cout << Z / V << endl;
+							      cout << "Sonuç: " << Z / V << endl;
 						      }
 						      }
 						    
@@ -114,7 +114,7 @@ int main(){
 					       cout << "0 dan küçük sayılar reel değildir!" << endl;
 				       }
 				       else{	       
-					       cout << sqrt(Q) << endl;
+					       cout << "Sonuç: " << sqrt(Q) << endl;
 			       }
 				       break;
 
@@ -126,7 +126,7 @@ int main(){
 				       cin >> X;
 				       cout << "Üs sayıyı girin." << endl;
 				       cin >> Y;
-					       cout << pow(X, Y) << endl;
+					       cout << "Sonuç: " << pow(X, Y) << endl;
 				       }
 				       }
 			       break;
@@ -148,6 +148,7 @@ int main(){
 								      else {
 									      cout << "Bu sayılardan dik üçgen ve hipotenüs olmuyor." << endl;
 					      }
+								      break;
 								     }	
 							      default:{
 											     cout << "Belirli bir seçenek gir!" << endl;
