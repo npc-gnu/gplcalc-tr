@@ -4,32 +4,32 @@ using namespace std;
 
 int main(){
 
-	int A;
+	int secenek;
 		cout << "Bir seçenek girin. 1. 4 Temel işlem, 2. Karmaşık işlemler, 3. Üçgen işlemleri." << endl;
-	cin >> A;
+	cin >> secenek;
 
-		switch (A) {
+		switch (secenek) {
 			case 1: {
-				int B;
+				int basitsecenek;
 				cout << "Seçenek girin. 1. Toplama, 2. Çıkarma, 3. Çarpma, 4. Bölme" << endl;
-				cin >> B;
-				switch (B) {
+				cin >> basitsecenek;
+				switch (basitsecenek) {
 			case 1: {
 			cout << "Toplayacağınız sayıları girin. '=' yazarak işlemi bitirin." << endl;
 
 				float toplam = 0;
-				string input;
+				string girdi;
 
 				while (true) {
 					cout << ">> ";
-					cin >> input;
+					cin >> girdi;
 
-					if (input == "=") {
+					if (girdi == "=") {
 						break;
 					}
 
 					try {
-						float sayi = stof(input);
+						float sayi = stof(girdi);
 						toplam += sayi;
 					} catch (...) {
 						cout << "Geçersiz giriş! Sayı girin veya '=' ile bitirin." << endl;
@@ -42,52 +42,68 @@ int main(){
 				break;
 			case 2:{
 				       cout << "1. Çıkarılan, 2. çıkan sayı girin." << endl;
-				       float N;
-				       float U;
-				       cin >> N;
-				       cin >> U;
-				       cout << "Sonuç: " << N - U << endl;
+				       float cikarilan;
+				       float cikan;
+				       cin >> cikarilan;
+				       cin >> cikan;
+				       cout << "Sonuç: " << cikarilan - cikan << endl;
 			       }
 			       break;
 			case 3:{
-				       cout << "2 sayı girin." << endl;
-				       float X;
-				       float G;
-				       cin >> X;
-				       cin >> G;
-				       cout << "Sonuç: " << X * G << endl;
+				       cout << "Çarpacağınız sayıları girin. '=' ile işlemi bitirin." << endl;
+					   float carpim = 1;
+					   string girdi;
+
+					   while (true) {
+						   cout << ">> ";
+						   cin >> girdi;
+
+						   if (girdi == "=") {
+							   break;
+						   }
+
+						   try {
+							   float sayi = stof(girdi);
+							   carpim *= sayi;
+						   } catch (...) {
+							   cout << "Geçersiz giriş! Sayı girin veya '=' ile bitirin." << endl;
+						   }
+					   }
+
+
+					   cout << "Çarpım sonucu: " << carpim << endl;
 			       }
 			       break;
 			case 4:{
 				       cout << "Tam sayı için 1, ondalıklı sayı bölümü için 2 yazın." << endl;
-				       int P;
-				       cin >> P;
-				       switch (P){
+				       int bolum;
+				       cin >> bolum;
+				       switch (bolum){
 					       case 1:{
 							      cout << "1. Bölünen, 2. Bölen sayı girin." << endl;
-							      int I;
-							      int Q;
-							      cin >> I;
-							      cin >> Q;
-							      if (Q == 0){
+							      int tbolunen;
+							      int tbolen;
+							      cin >> tbolunen;
+							      cin >> tbolen;
+							      if (tbolen == 0){
 								      cout << "Sıfıra bölünemez!" << endl;
 							      }
 							      else{
-							      cout << "Sonuç: " << I / Q << endl;
+							      cout << "Sonuç: " << tbolunen / tbolen << endl;
 						      }
 						      }
 						      break;
 					       case 2:{
 							      cout << "1. Bölünen, 2. Bölen sayı girin." << endl;
-							      float Z;
-							      float V;
-							      cin >> Z;
-							      cin >> V;
-							      if (V == 0){
+							      float obolunen;
+							      float obolen;
+							      cin >> obolunen;
+							      cin >> obolen;
+							      if (obolen == 0){
 								      cout << "Sıfıra bölünemez!" << endl;
 							      }
 							      else{
-							      cout << "Sonuç: " << Z / V << endl;
+							      cout << "Sonuç: " << obolunen / obolen << endl;
 						      }
 						      }
 						    
@@ -101,54 +117,55 @@ int main(){
 				}
 			       break;
 			case 2:{
-				       int C;
+				       int karmasiksecenek;
 				       cout << "Bir seçenek girin: 1. Kök, 2. Üssü ifade işlemi." << endl;
-				       cin >> C;
+				       cin >> karmasiksecenek;
 				      
-				       switch (C){
+				       switch (karmasiksecenek){
 				       case 1:{
 				       cout << "1 Sayı girin." << endl;   
-			               float Q;
-				       cin >> Q;
-				       if (Q < 0){
+			               float koksayi;
+				       cin >> koksayi;
+				       if (koksayi < 0){
 					       cout << "0 dan küçük sayılar reel değildir!" << endl;
 				       }
 				       else{	       
-					       cout << "Sonuç: " << sqrt(Q) << endl;
+					       cout << "Sonuç: " << sqrt(koksayi) << endl;
 			       }
 				       break;
 
 			       }
 				       case 2:{
-					       float X;
-					       float Y;
+					       float taban;
+					       float us;
 				       cout << "Taban sayıyı girin." << endl;
-				       cin >> X;
+				       cin >> taban;
 				       cout << "Üs sayıyı girin." << endl;
-				       cin >> Y;
-					       cout << "Sonuç: " << pow(X, Y) << endl;
+				       cin >> us;
+					       cout << "Sonuç: " << pow(taban, us) << endl;
 				       }
 				       }
 			       break;
 			 case 3:{
-						      cout << "Seçenek girin. 1: Hipotenüs hesapla" << endl;
-						      int S;
-						      cin >> S;
-						      switch (S){
+						      cout << "Seçenek girin. 1: Hipotenüs hesapla." << endl;
+						      int ucgensecenek;
+						      cin >> ucgensecenek;
+						      switch (ucgensecenek){
 							      case 1:{
 								      cout << "2 dik kenarı girin." << endl;
-								      float W;
-								      float L;
-								      cin >> W;
-								      cin >> L;
-								      float h = sqrt(L*L + W*W);
-								      if(W * W + L * L == h*h){
-									      cout << "Sonuç: " << h << endl;
+								      float ilkdikkenar;
+								      float ikincidikkenar;
+								      cin >> ilkdikkenar;
+								      cin >> ikincidikkenar;
+								      float hipotenus = sqrt(ilkdikkenar*ilkdikkenar + ikincidikkenar*ikincidikkenar);
+								      if(ilkdikkenar * ilkdikkenar + ikincidikkenar * ikincidikkenar == hipotenus * hipotenus){
+									      cout << "Sonuç: " << hipotenus << endl;
 						      }
 								      else {
 									      cout << "Bu sayılardan dik üçgen ve hipotenüs olmuyor." << endl;
 					      }
 								      break;
+
 								     }	
 							      default:{
 											     cout << "Belirli bir seçenek gir!" << endl;
