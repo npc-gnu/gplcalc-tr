@@ -25,4 +25,4 @@ Yapabileceği işlemler:
 
 ## Lisans:
 
-Bu yazılım ve onun her bir parçası GNU is Not UNIX General Public Lisence 3. sürüm ile lisanslanmıştır. (GPLv3)
+Bu yazılım ve onun her bir parçası GNU is Not UNIX Affero General Public Lisence 3. sürüm ile lisanslanmıştır. (AGPLv3)
