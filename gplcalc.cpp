@@ -147,7 +147,7 @@ int main(){
 				       }
 			       break;
 			 case 3:{
-						      cout << "Seçenek girin. 1: Hipotenüs hesapla." << endl;
+						      cout << "Seçenek girin. 1: Hipotenüs hesaplama, 2: Eğim hesaplama" << endl;
 						      int ucgensecenek;
 						      cin >> ucgensecenek;
 						      switch (ucgensecenek){
@@ -164,9 +164,19 @@ int main(){
 								      else {
 									      cout << "Bu sayılardan dik üçgen ve hipotenüs olmuyor." << endl;
 					      }
+								     }
 								      break;
+									     case 2:{
+											    cout << "İlk dik kenarı girin." << endl;
+											    float eilkdikkenar;
+											    cin >> eilkdikkenar;
+											    cout << "İkinci dik kenarı girin." << endl;
+											    float eikincidikkenar;
+											    cin >> eikincidikkenar;
+											    cout << "Sonuç: " << eilkdikkenar / eikincidikkenar << endl;
 
 								     }	
+								    
 							      default:{
 											     cout << "Belirli bir seçenek gir!" << endl;
 										     }
