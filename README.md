@@ -1,3 +1,5 @@
+Bu projede kod karmaşası yaşandı. Sıfırdan yazılacak ve TUI olacak. Bu depo ve gplcalc deposu, gplcalc-tr-old ve gplcalc-old olarak işaretlenecek.
+
 ![gplcalc logo](./logo.png)
 
 # gplcalc
