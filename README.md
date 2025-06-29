@@ -1,4 +1,4 @@
-- Bu projenin geliştirmesini bitirdim. Şu anki hatalarını düzelteceğim, ama başka güncelleme gelmeyecek.
+- Bu projenin geliştirmesini bitirdim. Hala pulll request/issue atarsanız ilgilenebilirim yinede.
 
 ![gplcalc logo](./logo.png)
 
